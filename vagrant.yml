@@ -19,6 +19,7 @@ synced_folders:
       #- "projectA"  # rsync projectA folder
       #- "projectB"  # rsync projectB folder
       #- ""  # rsync the whole <Projects> folder. WARNING: don't do this if your <Projects> folder is big.
+    # nfs_synced_folder: '/folder/with/projects/'
 
 # VirtualBox VM settings
 v.gui: false  # Set to true for debugging. Will unhide VM's primary console screen.
