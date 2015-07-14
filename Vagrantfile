@@ -110,7 +110,7 @@ Vagrant.configure("2") do |config|
   synced_folders = $vconfig['synced_folders']
   # nfs: better performance on Mac
   if synced_folders['type'] == "nfs"  && !is_windows
-    config.vm.synced_folder vagrant_root, vagrant_mount_point,
+    config.vm.synced_folder synced_folders['nfs_synced_folder'], synced_folders['nfs_synced_folder'],
       type: "nfs",
       mount_options: ["nolock", "vers=3", "tcp"]
     config.nfs.map_uid = Process.uid
